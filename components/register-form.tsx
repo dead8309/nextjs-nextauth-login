@@ -131,7 +131,7 @@ export function RegisterForm() {
                 })}
                 href={"/sign-in"}
               >
-                Sign up
+                Sign in
               </Link>
             </div>
             <Button className="w-full" type="submit">

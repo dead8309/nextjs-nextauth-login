@@ -14,7 +14,7 @@ const DashboardPage = async () => {
   }
 
   return (
-    <div className="container flex flex-col gap-4">
+    <div className="container flex flex-col gap-4 items-center justify-center">
      <Avatar className="h-20 w-20">
         <AvatarImage
           src={session.user.image as string}
