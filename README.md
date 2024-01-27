@@ -1,24 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Authentication Application
+
+This project showcases user authentication using NextAuth, Prisma,Supabase, Shadcn/UI, and Tailwind CSS.
+
+## Screenshots
+
+![Screenshot 1](screenshots/screenshot-1.png)
+*sign-in*
+
+![Screenshot 2](screenshots/screenshot-2.png)
+*sign-up*
+
+## Features
+
+- User authentication with NextAuth
+- Database integration with Prisma
+- UI components from Shadcn/UI
+- Styling with Tailwind CSS
+
+## Prerequisites
+
+Make sure you have the following installed before running the project:
+
+- Node.js and npm (Node Package Manager)
+- PostgreSQL database (or another supported database for Prisma)
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```bash
+    git clone https://github.com/dead8309/nextjs-nextauth-login.git
+    cd nextjs-nextauth-login
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install dependencies:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Set up your environment variables:**
+
+    Create a `.env.local` file in the root directory and add the following:
+
+    ```env
+    DATABASE_URL=your_database_url
+    NEXTAUTH_SECREt=ejenfvceiwfnveiwnfcveenef
+    ```
+
+4. **Run database migrations:**
+
+    ```bash
+    npx prisma migrate dev
+    ```
+
+5. **Start the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+    The application will be available at `http://localhost:3000`.
+
+## Project Structure
+
+- `app/`: Pages and API routes
+- `public/`: Static assets
+- `components/`: Reusable React components
+- `prisma/`: Prisma database schema and configurations
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [NextAuth](https://next-auth.js.org/)
+- [Prisma](https://www.prisma.io/)
+- [Shadcn/UI](https://github.com/shadcn/ui)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Supabase](https://supabase.io/)
+
 
 ## Learn More
 
